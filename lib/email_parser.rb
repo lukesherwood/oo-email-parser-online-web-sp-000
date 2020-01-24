@@ -12,7 +12,7 @@ def initialize(emails)
 end
 
 def parse
-  parse = @email_addresses.split(", ").join(" ").split(" ").uniq
+  parse = @email_addresses.split(/\s*,\s*/).uniq
   return parse
 end
 
