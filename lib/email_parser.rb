@@ -12,8 +12,7 @@ def initialize(emails)
 end
 
 def parse
-  parse = @email_addresses.split(", ").join(" ").split(" ").uniq
-  return parse
+  @email_addresses.split(", ").join(" ").split(" ").uniq
 end
 
 end
