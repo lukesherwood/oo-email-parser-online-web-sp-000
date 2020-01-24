@@ -12,7 +12,7 @@ def initialize(emails)
 end
 
 def parse
-  parse = @email_addresses.split(/ ,/).uniq
+  parse = @email_addresses.split(/\W+/).uniq
   return parse
 end
 
